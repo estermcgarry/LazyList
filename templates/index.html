@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+<!-- {% block head %}
+<h1>Template</h1>
+{% endblock head %}
+
+{% block body %}
+
+<p>Paragraph</p>
+
+    {% for item in items %}
+        <p></p>
+        <p> ARTISTS {{ item.track.artists[0].name }} NAME {{ item.track.name }}</p>
+    {% endfor %}
+
+{% endblock body %}
+
+{% block options %} -->
+
+
+<body>
+
+    Name your list and click Next: <input type="text" id="myText" value="">
+
+    
+    <button onclick="myFunction()">Next</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myText").value;
+        document.getElementById("demo").innerHTML = x;
+        window.location.href = '/list';
+    }
+    </script>
+    
+    </body>
+    </html>
+
+{% endblock options%}

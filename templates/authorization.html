@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block auth %}
+
+<script>
+
+    function myFunction(){
+        window.location.href = '/index';
+    }
+    
+</script>
+
+<p>Login</p>
+<button onclick="myFunction()">Click me</button>
+
+
+{% endblock auth %}
